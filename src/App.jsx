@@ -4,7 +4,7 @@ const Header = ({ course }) => {
     )
 }
 
-const Content = ({ part, exc }) => {
+const Part = ({ part, exc }) => {
     return (
         <p>
             {part} {exc}
@@ -35,15 +35,15 @@ const App = () => {
     return (
         <div>
             <Header course={course} />
-            <Content
+            <Part
                 part={part1}
                 exc={exercises1}
             />
-            <Content
+            <Part
                 part={part2}
                 exc={exercises2}
             />
-            <Content
+            <Part
                 part={part3}
                 exc={exercises3}
             />
